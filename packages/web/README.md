@@ -24,7 +24,7 @@ Settings are read from `~/.pi/agent/settings.json` under the `archimedes.web` na
 
 [Keenable](https://keenable.ai) is never picked by the automatic Brave → Tavily → Perplexity → SearXNG → DuckDuckGo chain. Use it with `provider: "keenable"` on a `web_search` call, or set `"defaultProvider": "keenable"` under `archimedes.web`.
 
-It works without a key: requests then go to Keenable's public endpoint, which is rate limited per IP. Keenable logs keyless requests with the query and IP. Set `keenableApiKey` / `KEENABLE_API_KEY` to use the keyed endpoint and get higher limits.
+It works without a key: requests then go to Keenable's public endpoint, which is rate limited per IP. On its default data policy Keenable logs requests with the query, results and IP, with or without a key ([data and privacy](https://docs.keenable.ai/data-privacy)). Set `keenableApiKey` / `KEENABLE_API_KEY` to use the keyed endpoint and get higher limits.
 
 ## Features
 
